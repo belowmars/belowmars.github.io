@@ -1,9 +1,11 @@
 body {
   background-color: #303030;
+  background-image: linear-gradient(#c0392b, #303030);
 }
 
 h3 {
   color: Tomato;
   font-size: 6vw;
   font-family: Arial;
+  text-align: center;
 }
