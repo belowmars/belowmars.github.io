@@ -1,7 +1,7 @@
 body {
-  background-color: #303030;
-  background-image: linear-gradient(#c0392b, #303030);
-  background-repeat: repeat-x;
+ background-image: url('img/background.png');
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 
 h3 {
