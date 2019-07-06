@@ -12,3 +12,10 @@ h3 {
   font-family: Arial;
   text-align: center;
 }
+
+.bottomright {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 8px;
+}
