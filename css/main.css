@@ -23,17 +23,17 @@ body, html {
 
 #flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+	justify-content: center;
     margin: 0;
-	padding: 10px;
 	background-color: #071821;
+	height: 200px;
 }
 
-.flex-item {
-    width: 100px;
-    height: 200px;
+#flex-item {
+    text-align: center;
+	margin: 10px;
+	
+
 }
 
 	
