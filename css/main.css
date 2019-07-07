@@ -1,6 +1,17 @@
 body, html {
   height: 100%;
   margin: 0;
+  color: #306850;
+  
+  
+}
+
+a:link {
+  color: #86c06c;
+}
+
+a:hover {
+  color: #e0f8cf;
 }
 
 .bg {
@@ -41,5 +52,5 @@ body, html {
 #h3-footer {
 	font-family: "Verdana";
 	font-size:30px;
-	color: #86c06c;
+
 }
