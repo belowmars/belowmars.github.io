@@ -26,7 +26,8 @@ body, html {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
+	background-color: #071821;
 }
 
 .flex-item {
