@@ -1,20 +1,11 @@
-body {
-	height: 100%;
+body, html {
+  height: 100%;
+}
+
+.bg {
  background-image: url('https://raw.githubusercontent.com/belowmars/belowmars.github.io/master/img/background.png');
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
-}
-
-h3 {
-  color: Tomato;
-  font-size: 6vw;
-  font-family: Arial;
-  text-align: center;
-}
-
-.bottomright {
-	position: absolute;
-	bottom: 8px;
-	right: 16px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
