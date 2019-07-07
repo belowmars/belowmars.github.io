@@ -20,3 +20,25 @@ body, html {
 .title img {
 	width: 40%;
 }
+
+.container {
+	height: 200px;
+	background-color: #071821;
+	
+.left {
+	position: left;
+}
+
+.center {
+	position: center;
+}
+
+.right {
+	position: right;
+}
+	
+	
+h3 {
+	size: 20px;
+	color: #86c06c;
+}
