@@ -1,18 +1,54 @@
+$main-color: #86c06c;
+
 body, html {
   height: 100%;
   margin: 0;
-  color: #306850;
-  
-  
-}
-
-a:link {
-  color: #86c06c;
-}
-
-a:hover {
   color: #e0f8cf;
+  
+  
 }
+
+    a{
+      text-decoration:none;
+      display:block;
+      padding:5px 0;
+      font-family:'Open Sans';
+      font-size:26px;
+      line-height:1;
+      font-weight:bold;
+      position:relative;
+      z-index:1;
+      text-align: center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+          to right,
+          $main-color,
+          $main-color 50%,
+          #306850 50%);
+      background-size: 200% 100%;
+      background-position: -100%;
+      transition: all 0.3s ease-in-out;
+      &:before{
+        display:block;
+        content:'';
+        width:0;
+        height:3px;
+        bottom:5px;
+        left:0;
+        bottom:-3px;
+        z-index:0;
+        position:absolute;
+        background:$main-color;
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover{
+        background-position: 0%;
+        &:before{
+          width:100%;
+		  
+		  
+/* Thanks Boris for the link styling https://codepen.io/babouz44/ */
 
 .bg {
  background-image: url('https://raw.githubusercontent.com/belowmars/belowmars.github.io/master/img/background.png');
@@ -34,15 +70,15 @@ a:hover {
 
 #flex-container {
     display: flex;
-	justify-content: center;
     margin: 0;
 	background-color: #071821;
-	height: 200px;
 }
 
 #flex-item {
     text-align: center;
 	margin: 10px;
+	padding: 10;
+	width: 100%;
 	
 
 }
