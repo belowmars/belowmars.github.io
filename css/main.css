@@ -21,24 +21,24 @@ body, html {
 	width: 40%;
 }
 
-.container {
-	height: 200px;
-	background-color: #071821;
-	
-.left {
-	position: left;
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.center {
-	position: center;
+.flex-item {
+    width: 100px;
+    height: 200px;
+    background: #369;
 }
 
-.right {
-	position: right;
-}
 	
 	
-h3 {
-	size: 20px;
+#h3-footer {
+	font-family: "Verdana";
+	font-size:10vw;
 	color: #86c06c;
 }
