@@ -12,9 +12,11 @@ body, html {
 }
 
 .title {
- background-image: url('https://raw.githubusercontent.com/belowmars/belowmars.github.io/master/img/title.png');
-  height: 100%;
-  background-position: top, left;
-  background-repeat: no-repeat;
-  background-size: 50%;
+	position: absolute;
+	top: 10px;
+	left: 16px;
+}
+
+.title img {
+	width: 20%;
 }
