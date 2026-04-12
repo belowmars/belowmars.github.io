@@ -4,9 +4,9 @@
   {% for item in navigation %}
   <tr>
     <td>
-      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">
-        {{ item.name }}
-      </a>
+		<a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url | url }}">
+		{{ item.name }}
+		</a>
     </td>
   </tr>
   {% endfor %}
