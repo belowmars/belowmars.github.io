@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or "Below Mars" }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <table class="layout-table" role="presentation">
+      <tr>
+        <td colspan="2" class="header-panel">
+          <div class="title-box">
+            <h1 class="site-title">Below Mars</h1>
+            <p class="site-subtitle">Colony Archive Relay :: Unauthorized Deep Access Prohibited</p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="sidebar-panel" width="240">
+          {% include "nav.njk" %}
+        </td>
+
+        <td class="content-panel">
+          {{ content | safe }}
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="footer-panel">
+          BELOW MARS ARCHIVE NODE :: SOL-RELAYS MIRROR 03
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

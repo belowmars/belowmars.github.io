@@ -1,0 +1,194 @@
+:root {
+  --bg-dark: #071821;
+  --panel-dark: #306850;
+  --panel-mid: #86c06c;
+  --text-light: #e0f8cf;
+
+  --border-main: var(--panel-mid);
+  --border-dark: var(--panel-dark);
+  --link-color: var(--text-light);
+  --link-hover-bg: var(--text-light);
+  --link-hover-text: var(--bg-dark);
+}
+
+/* Reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Main shell */
+.site-shell {
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+/* 90s table look */
+.layout-table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 6px;
+  background: var(--bg-dark);
+}
+
+.layout-table td {
+  vertical-align: top;
+}
+
+/* Header */
+.header-panel,
+.sidebar-panel,
+.content-panel,
+.footer-panel {
+  background: var(--panel-dark);
+  border-top: 2px solid var(--panel-mid);
+  border-left: 2px solid var(--panel-mid);
+  border-right: 2px solid var(--bg-dark);
+  border-bottom: 2px solid var(--bg-dark);
+  padding: 10px;
+}
+
+.header-panel {
+  background: var(--panel-dark);
+}
+
+.title-box {
+  background: var(--bg-dark);
+  border: 2px solid var(--panel-mid);
+  padding: 10px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.site-subtitle {
+  margin: 6px 0 0;
+  color: var(--panel-mid);
+  font-size: 12px;
+}
+
+/* Sidebar nav */
+.nav-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nav-table td {
+  padding: 0 0 8px 0;
+}
+
+.nav-heading {
+  margin: 0 0 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  border-bottom: 1px solid var(--panel-mid);
+  padding-bottom: 4px;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: var(--link-color);
+  background: var(--bg-dark);
+  border-top: 1px solid var(--panel-mid);
+  border-left: 1px solid var(--panel-mid);
+  border-right: 1px solid var(--bg-dark);
+  border-bottom: 1px solid var(--bg-dark);
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--link-hover-bg);
+  color: var(--link-hover-text);
+}
+
+/* Content */
+.content-title {
+  margin-top: 0;
+  font-size: 22px;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.content-box {
+  background: var(--bg-dark);
+  border: 1px solid var(--panel-mid);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.content-box h3 {
+  margin-top: 0;
+  color: var(--panel-mid);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.content-box p:last-child {
+  margin-bottom: 0;
+}
+
+.inline-links a {
+  color: var(--text-light);
+}
+
+.inline-links a:hover {
+  color: var(--panel-mid);
+}
+
+/* Footer */
+.footer-panel {
+  font-size: 12px;
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* Retro utility bits */
+.blink {
+  animation: blinkAnim 1s steps(2, start) infinite;
+}
+
+@keyframes blinkAnim {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Responsive enough without losing the vibe */
+@media (max-width: 800px) {
+  .layout-table,
+  .layout-table tbody,
+  .layout-table tr,
+  .layout-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .layout-table td {
+    margin-bottom: 6px;
+  }
+}
