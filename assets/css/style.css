@@ -24,9 +24,24 @@ html, body {
 body {
   background: var(--bg-dark);
   color: var(--text-light);
-  font-family: Verdana, Arial, sans-serif;
+  font-family: "Share Tech Mono", "Courier New", monospace;
   font-size: 14px;
   line-height: 1.4;
+}
+
+a {
+  color: var(--panel-mid);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--text-light);
+}
+
+a:hover {
+  color: var(--bg-dark);
+  background: var(--panel-mid);
+  text-decoration: none;
 }
 
 /* Main shell */
@@ -118,6 +133,7 @@ body {
   border-bottom: 1px solid var(--bg-dark);
   padding: 6px 8px;
   font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
 .nav-link:hover,
@@ -139,6 +155,13 @@ body {
   border: 1px solid var(--panel-mid);
   padding: 12px;
   margin-bottom: 12px;
+}
+
+.content-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--panel-mid);
 }
 
 .content-box h3 {
