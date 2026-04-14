@@ -161,7 +161,7 @@ a:hover {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 1px solid var(--panel-mid);
+  border: 0px solid var(--panel-mid);
 }
 
 .content-box h3 {
